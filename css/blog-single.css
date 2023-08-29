@@ -31,7 +31,6 @@ body {
     overflow-x: hidden;
 }
 
-
 /* navbar */
 
 nav {
@@ -47,6 +46,10 @@ nav {
 
 .container {
     padding:0 14%;
+}
+
+.episodes {
+    border: none;
 }
 
 .nav-server {
@@ -517,23 +520,6 @@ footer {
 }
 /* end of footer part */
 
-.content {
-    border: solid 1px var(--light-gray);
-    line-height: 25px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    max-height: 0;
-    transition: max-height ease-out;
-    height: 330px;
-    width: 100%;
-}
-
-.pointer {
-    cursor: pointer;
-    margin-left: 10px;
-    color: var(--violet);
-}
-
 /* Media Part */
 
 @media screen and (max-width: 920px) {
@@ -709,4 +695,3 @@ footer {
     }
 
 } 
-

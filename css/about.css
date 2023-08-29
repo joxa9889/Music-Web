@@ -19,10 +19,6 @@
     --violet: #7247CA;
 }
 
-body {
-    overflow-x: hidden ;
-}
-
 button {
     cursor: pointer;
 }
@@ -31,10 +27,14 @@ i {
     cursor: pointer;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* navbar */
 
 nav {
-    width: 100%;
+    width: 100vw;
     border-bottom: solid 1.2px var(--light-gray);
     padding-top: 33px;
     padding-bottom: 33px;
@@ -72,6 +72,81 @@ nav {
 }
 
 /* end of navbar */
+
+/* beginning of about */
+
+.second-part {
+    margin-top: 96px;
+}
+
+.header-about {
+    color: var(--lighter-black);
+    font-size: 26px;
+}
+
+.question-about {
+    color: var(--lighter-black);
+    font-size: 21px;
+    margin-top: 41px;
+}
+
+.sml-txt-cont {
+    margin-top: 24px;
+}
+
+.team-members {
+    margin-top: 39px;
+}
+
+.header-team-members {
+    font-size: 21px;
+    color: var(--lighter-black);
+}
+
+.team-members-cont {
+    margin-top: 24px;
+}
+
+.members-mid-cont {
+    display: flex;
+}
+
+.girls-cont {
+    margin-top: 39px;
+}
+
+.text-cont {
+    margin-left: 39px;
+}
+
+.position {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.92px;
+    color: var(--violet);
+    font-weight: 600;
+}
+
+.nick {
+    font-size: 18px;
+    margin-top: 8px;
+    color: var(--lighter-black);
+}
+
+.small-text {
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.about-icons {
+    margin-top: 24px;
+}
+
+.icon-same {
+    margin-right: 15px;
+}
+
+/* end of about */
 
 /* footer part */
 
@@ -185,6 +260,11 @@ footer {
 /* Media part */
 
 @media screen and (max-width: 920px) {
+
+    .second-server {
+        padding-left: 1%;
+    }
+
     .change-nav {
         margin-left: 30px;
     }
@@ -193,11 +273,20 @@ footer {
     }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 819px) {
+
+    .text-cont {
+        margin-left: 0px;
+    }
 
     .second-server {
-        padding: 0 20px;
+        padding-left: 12%;
     }
+
+    .members-mid-cont {
+        display: block;
+    }
+
     .phone-nav {
         display: block;
     }
@@ -213,8 +302,19 @@ footer {
     .others {
         display: none;
     }
+
+    .second-server {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
 }
+
 @media screen and (max-width: 505px) {
+
+    .members-mid-cont {
+        display: block;
+    }
+
     .br {
         display: inline;
     }
@@ -230,10 +330,6 @@ footer {
     .footer-cont {
         display: block;
     }
- }
-
-
-@media screen and (max-width: 505px) {
 
     .second-footer-div {
         margin-top: 32px;
@@ -244,11 +340,11 @@ footer {
     }
 
     .send-email {
-        width: 52%;
+        width: 220px;
     }
 
     .submit-cont {
-        width: 63%;
+        width: 270px;
     }
 
     .last-txt {
@@ -256,18 +352,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 300px) {
 
-    .send-email {
-        width: 52%;
-    }
-
-    .submit-cont {
-        width: 63%;
-    }
-
-    .last-txt {
-        font-size: 10px;
+    .img-spec {
+        width: 90%;
+        height: 90%;
     }
 
 }
