@@ -1,0 +1,11 @@
+.root{
+    --lighter-black: #222222;
+}
+.container{
+    color: var(--lighter-black);
+    font-family: Source Serif Pro;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 123.077% */
+}
