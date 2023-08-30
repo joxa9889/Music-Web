@@ -230,10 +230,6 @@ footer {
     .footer-cont {
         display: block;
     }
- }
-
-
-@media screen and (max-width: 505px) {
 
     .second-footer-div {
         margin-top: 32px;

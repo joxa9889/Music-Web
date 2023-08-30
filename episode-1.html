@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/javohir.css">
+    <link rel="stylesheet" href="/css/episode-1.css">
 </head>
 <body>
     <nav>
         <div class="container">
             <div class="nav-server">
                 <div class="nav-first">
-                    <img src="/img/Logo (1).svg" alt="">
+                    <a href="/home.html"><img src="/img/Logo (1).svg" alt=""></a>
                 </div>
 
                 <div class="nav-second phone-nav">
-                    <div><img src="/img/Menu-Icon.svg" alt=""></div>
+                    <div><a href="/home.html"><img src="/img/Menu-Icon.svg" alt=""></a></div>
                 </div>
 
                 <div class="nav-second others">
-                    <div class=""><a class="nav-a" href="">Episodes </a><img src="/img/Icon color.svg" alt=""></div>
-                    <div class="change-nav"><a class="nav-a" href="">Blog </a></div>
+                    <div>
+                        <button class="collapsibility nav-a">Episodes <i class="up fa-solid fa-chevron-up"></i></button>
+                        <div class="contenting">
+                            <div class="same-season"><a class="same-link" href="/episode-1.html">Season 1</a></div>
+                            <div class="same-season anoth"><a class="same-link" href="/episode-2.html">Season 2</a></div>
+                            <div class="same-season anoth"><a class="same-link" href="/episode-3.html">Season 3</a></div>
+                        </div>
+                    </div>
+                    <div class="change-nav"><a class="nav-a" href="/blog.html">Blog </a></div>
                     <div class="change-nav"><a class="nav-a" href="">Contact </a></div>
                     <div class="change-nav"><i class="heart fa-regular fa-heart"></i><a class="nav-a heart" href="/donate.html"> Donate </a></div>
                     <div class="change-nav"><i class="fa-solid fa-magnifying-glass"></i></div>
@@ -39,14 +46,16 @@
                     <div class="about-sec">Jan 8, 2021 |</div>
                     <div class="about-sec"> By VitaThemes</div>
                 </div>
-                <div class="music-cntrl">
-                    <div class="play"><i class="fa-solid fa-play sizing"></i></div>
-                    <div class="now-time">00:00</div>
-                    <div class="full-line"><div class="where-line"></div></div>
-                    <div class="end-time">02:45</div>
-                    <div class="sound"><i class="fa-solid fa-volume-high sizing" ></i></div>
-                    <div class="download"><i class="fa-solid fa-download sizing"></i></div>
-                </div>
+
+                    <div class="music-cntrl">
+                        <div class="play"><i class="fa-solid fa-play sizing"></i></div>
+                        <div class="now-time">00:00</div>
+                        <div class="full-line"><div class="where-line"></div></div>
+                        <div class="end-time">02:45</div>
+                        <div class="sound"><i class="fa-solid fa-volume-high sizing" ></i></div>
+                        <div class="download"><i class="fa-solid fa-download sizing"></i></div>
+                    </div>
+                    
                 <div class="add">
                     <div class="listen-on">Listen On</div>
                     <div class="music-apps">
@@ -248,6 +257,7 @@
     </div>
 <!-- sdsds -->
     <script>
+        
     var coll = document.getElementsByClassName("button");
     var i;
     
@@ -264,6 +274,22 @@
         } 
       });
     }
+
+    var coll = document.getElementsByClassName("collapsibility");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+        content.style.maxHeight = null;
+        } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        } 
+    });
+    }
+
     </script>
     <script src="https://kit.fontawesome.com/f268549e46.js" crossorigin="anonymous"></script>
 </body>

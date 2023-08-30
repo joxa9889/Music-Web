@@ -11,18 +11,25 @@
         <div class="container">
             <div class="nav-server">
                 <div class="nav-first">
-                    <a href="/javohir.html"><img src="/img/Logo (1).svg" alt=""></a>
+                    <a href="/home.html"><img src="/img/Logo (1).svg" alt=""></a>
                 </div>
 
                 <div class="nav-second phone-nav">
-                    <div><img src="/img/Menu-Icon.svg" alt=""></div>
+                    <div><a href="/home.html"><img src="/img/Menu-Icon.svg" alt=""></a></div>
                 </div>
 
                 <div class="nav-second others">
-                    <div class=""><a class="nav-a" href="">Episodes </a><img src="/img/Icon color.svg" alt=""></div>
-                    <div class="change-nav"><a class="nav-a" href="">Blog </a></div>
+                    <div>
+                        <button class="collapsible nav-a">Episodes <i class="up fa-solid fa-chevron-up"></i></button>
+                        <div class="content">
+                            <div class="same-season"><a class="same-link" href="/episode-1.html">Season 1</a></div>
+                            <div class="same-season anoth"><a class="same-link" href="/episode-2.html">Season 2</a></div>
+                            <div class="same-season anoth"><a class="same-link" href="/episode-3.html">Season 3</a></div>
+                        </div>
+                    </div>
+                    <div class="change-nav"><a class="nav-a" href="/blog.html">Blog </a></div>
                     <div class="change-nav"><a class="nav-a" href="">Contact </a></div>
-                    <div class="change-nav"><i class="heart fa-regular fa-heart"></i><a class="nav-a heart" href=""> Donate </a></div>
+                    <div class="change-nav"><i class="heart fa-regular fa-heart"></i><a class="nav-a heart" href="/donate.html"> Donate </a></div>
                     <div class="change-nav"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div>
             </div>
@@ -108,5 +115,22 @@
     </div>
 
     <script src="https://kit.fontawesome.com/f268549e46.js" crossorigin="anonymous"></script>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+    
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+    </script>
 </body>
 </html>

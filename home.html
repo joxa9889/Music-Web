@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/donate.css">
+    <link rel="stylesheet" href="/css/home.css">
+
 </head>
 <body>
     <nav>
         <div class="container">
             <div class="nav-server">
                 <div class="nav-first">
-                    <a href="/empty_css_shablon.css"><img src="/img/Logo (1).svg" alt=""></a>
+                    <a href="/home.html"><img src="/img/Logo (1).svg" alt=""></a>
                 </div>
 
                 <div class="nav-second phone-nav">
-                    <div><img src="/img/Menu-Icon.svg" alt=""></div>
+                    <div><a href="/home.html"><img src="/img/Menu-Icon.svg" alt=""></a></div>
                 </div>
 
                 <div class="nav-second others">
-                    <div class=""><a class="nav-a" href="">Episodes </a><img src="/img/Icon color.svg" alt=""></div>
-                    <div class="change-nav"><a class="nav-a" href="">Blog </a></div>
+                    <div>
+                        <button class="collapsible nav-a">Episodes <i class="up fa-solid fa-chevron-up"></i></button>
+                        <div class="content">
+                            <div class="same-season"><a class="same-link" href="/episode-1.html">Season 1</a></div>
+                            <div class="same-season anoth"><a class="same-link" href="/episode-2.html">Season 2</a></div>
+                            <div class="same-season anoth"><a class="same-link" href="/episode-3.html">Season 3</a></div>
+                        </div>
+                    </div>
+                    <div class="change-nav"><a class="nav-a" href="/blog.html">Blog </a></div>
                     <div class="change-nav"><a class="nav-a" href="">Contact </a></div>
-                    <div class="change-nav"><i class="heart fa-regular fa-heart"></i><a class="nav-a heart" href=""> Donate </a></div>
+                    <div class="change-nav"><i class="heart fa-regular fa-heart"></i><a class="nav-a heart" href="/donate.html"> Donate </a></div>
                     <div class="change-nav"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </div>
             </div>
@@ -31,39 +39,132 @@
 
     <div class="second-part">
         <div class="second-server">
+            <div class="containers">
 
-            <div class="container-body">
-                <div class="first-server">
-                    <img src="/img/img-music.png" alt="">
-                    <h1 class="music-add">Makemeup Podcast <br class="br">Theme; launch it now!</h1>
-                    <div class="about-music">
-                        <div class="about-sec">Episode 18 |</div>
-                        <div class="about-sec">Jan 8, 2021 |</div>
-                        <div class="about-sec"> By VitaThemes</div>
-                    </div>
-                    <div class="music-cntrl">
-                        <div class="play"><i class="fa-solid fa-play sizing"></i></div>
-                        <div class="now-time">00:00</div>
-                        <div class="full-line"><div class="where-line"></div></div>
-                        <div class="end-time">02:45</div>
-                        <div class="sound"><i class="fa-solid fa-volume-high sizing" ></i></div>
-                        <div class="download"><i class="fa-solid fa-download sizing"></i></div>
-                    </div>
-                    <div class="add">
-                        <div class="listen-on">Listen On</div>
-                        <div class="music-apps">
-                            <div><i class="fa-brands fa-spotify icon"></i></div>
-                            <div><i class="fa-brands fa-soundcloud icon"></i></div>
-                            <div><i class="fa-brands fa-apple apple"></i></div>
+            <div class="first-part">
+                <div class="container-body">
+                    <div class="first-server">
+                        <img src="/img/img-music.png" alt="">
+                        <h1 class="music-add">Makemeup Podcast <br class="br">Theme; launch it now!</h1>
+        
+                            <div class="music-cntrl">
+                                <div class="play"><i class="fa-solid fa-play sizing"></i></div>
+                                <div class="now-time">00:00</div>
+                                <div class="full-line"><div class="where-line"></div></div>
+                                <div class="end-time">02:45</div>
+                                <div class="sound"><i class="fa-solid fa-volume-high sizing" ></i></div>
+                                <div class="download"><i class="fa-solid fa-download sizing"></i></div>
+                            </div>
+                            
+                        <div class="add">
+                            <div class="listen-on">Listen On</div>
+                            <div class="music-apps">
+                                <div><i class="fa-brands fa-spotify icon"></i></div>
+                                <div><i class="fa-brands fa-soundcloud icon"></i></div>
+                                <div><i class="fa-brands fa-apple apple"></i></div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div class="same-podcast new">
+                        <div class="top-date">
+                            <div class="new-min-btn">New</div>
+                            <div class="date-what differ"><p>Business  |  Jan 18, 2021</p></div>
+                        </div>
+                        <div>
+                            <div class="podcast-name">23 - Makemeup Podcast Theme </div>
+                            <div class="podcast-text desktop-ver">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consect adipiscing elit. Sed at arcu dui. Aenean placerat mauris nisl...</div>
+                            <div class="podcast-text mobile-ver">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet...</div>
+                            <div class="listen-now">
+                                <div class="play-btn"><i class="listen fa-solid fa-play"></i></div>
+                                <div class="listen-txt">listen now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="same-podcast">
+                        <div class="top-date">
+                            <div class="date-what"><p>Business  |  Jan 18, 2021</p></div>
+                        </div>
+                        <div>
+                            <div class="podcast-name">22 - Makemeup Podcast Theme; launch an audio podcast !  </div>
+                            <div class="podcast-text desktop-ver">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consect adipiscing elit...</div>
+                            <div class="podcast-text mobile-ver">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Aenean placerat mauris nisl...</div>
+                            <div class="listen-now">
+                                <div class="play-btn"><i class="listen fa-solid fa-play"></i></div>
+                                <div class="listen-txt">listen now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="same-podcast">
+                        <div class="top-date">
+                            <div class="date-what"><p>Business  |  Jan 18, 2021</p></div>
+                        </div>
+                        <div>
+                            <div class="podcast-name">21 - Makemeup Podcast Theme; launch it now !  </div>
+                            <div class="podcast-text desktop-ver">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consect adipiscing elit...</div>
+                            <div class="podcast-text mobile-ver">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet...</div>
+                            <div class="listen-now">
+                                <div class="play-btn"><i class="listen fa-solid fa-play"></i></div>
+                                <div class="listen-txt">listen now</div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="sections-cont">
+                        <div class="section-change">1</div>
+                        <div class="section-change">2</div>
+                        <div class="section-change">3</div>
+                        <div class="section-change special">...</div>
+                        <div class="section-change" id="special-sec"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h1 class="team">Team</h1>
+                </div>
+
+                <div class="cards-cont">
+                    <div class="first-card-cont same-cont">
+                        <div>
+                            <img src="/img/girl-with-glasses-home.png" alt="">
+                        </div>
+
+                        <div class="text-cards">
+                            <p class="position">Position</p>
+                            <h3 class="nick-name">Aida Cave</h3>
+                            <div class="icon-cont">
+                                <div> <i class="spec-icon fa-brands fa-linkedin-in"></i> </div>
+                                <div> <i class="spec-icon fa-brands fa-github"></i>      </div>
+                                <div> <i class="spec-icon fa-brands fa-twitter"></i>     </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-card-cont same-cont">
+                        <div>
+                            <img src="/img/christian-buehner-home.png" alt="">
+                        </div>
+
+                        <div class="text-cards">
+                            <p class="position">Position</p>
+                            <h3 class="nick-name">Nick Carleton</h3>
+                            <div class="icon-cont">
+                                <div> <i class="spec-icon fa-brands fa-linkedin-in"></i> </div>
+                                <div> <i class="spec-icon fa-brands fa-github"></i>      </div>
+                                <div> <i class="spec-icon fa-brands fa-twitter"></i>     </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
             
 
-            <hr class="line-txt-4 same-line">
-            
             <footer>
                 <div class="footer-cont">
                     <div>
@@ -91,9 +192,29 @@
                     <i class="fa-brands fa-twitter"></i>
                 </div>
             </footer>
+            </div>
         </div>
     </div>
 
+
     <script src="https://kit.fontawesome.com/f268549e46.js" crossorigin="anonymous"></script>
+
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+        content.style.maxHeight = null;
+        } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        } 
+    });
+    }
+    </script>
+
 </body>
 </html>
