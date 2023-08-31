@@ -101,6 +101,10 @@ nav {
     transition: max-height 0.3s ease-out;
 }
 
+.img-spec {
+    border-radius: 4px;
+}
+
 .phone-cont {
     margin-top: 20px;
     display: none;

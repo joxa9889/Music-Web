@@ -363,6 +363,18 @@ footer {
     .container {
         padding:0 11%;
     }
+    .support {
+        margin-left: 30px;
+    }
+    .fill_form {
+        margin-left: 15px;
+        width: 500px;
+    }
+    .input {
+        width: 500px
+    }
+    
+   
 }
 
 @media screen and (max-width: 820px) {
@@ -373,6 +385,7 @@ footer {
     .phone-nav {
         display: block;
     }
+
 
     .nav-first {
         padding-top: 8px;
@@ -391,6 +404,13 @@ footer {
         display: inline;
     }
 
+    .fiil_form {
+        width: 288px;
+        height: 600px
+    }
+    .input, h4 {
+            width: 287px;
+        }
     .send-email {
         width: 85%;
     }

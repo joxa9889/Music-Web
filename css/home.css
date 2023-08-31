@@ -78,6 +78,10 @@ nav {
     text-transform: uppercase;
 }
 
+.clocker {
+    border-radius: 4px;
+}
+
 .same-season {
     font-size: 14.5px;
 }
