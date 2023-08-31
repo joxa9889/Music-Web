@@ -31,6 +31,20 @@ body {
     overflow-x: hidden;
 }
 
+.heartings:hover {
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.box-shad-img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.box-shad-min-box {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+
 /* navbar */
 
 nav {
@@ -70,12 +84,48 @@ nav {
     transition: max-height 0.3s ease-out;
 }
 
-.container {
-    padding:0 14%;
+.phone-cont {
+    margin-top: 20px;
+    display: none;
 }
 
-.episodes {
-    border: none;
+.centretor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.episod-container-ph {
+    text-align: center;
+}
+
+.same-seasons {
+    margin-top: 5px;
+}
+
+.same-phone-icons {
+    margin-top: 18px;
+}
+
+.same-phone-iconi {
+    margin-top: 10px;
+}
+
+.content-for-ph {
+    text-align: center;
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: var(--white);
+    padding: 0px 18px 0 18px;
+    overflow: auto;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+
+.container {
+    padding:0 14%;
 }
 
 .nav-server {
@@ -89,8 +139,10 @@ nav {
     display: flex;
 }
 
-.heart {
+.heart:hover {
     color: var(--violet);
+    font-size: 17px;
+    transition: 0.3s;
 }
 
 .change-nav {

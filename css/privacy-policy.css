@@ -66,9 +66,49 @@ nav {
     max-height: 0;
     transition: max-height 0.3s ease-out;
 }
+
+.phone-cont {
+    margin-top: 20px;
+    display: none;
+}
+
+.centretor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.episod-container-ph {
+    text-align: center;
+}
+
+.same-seasons {
+    margin-top: 5px;
+}
+
+.same-phone-icons {
+    margin-top: 18px;
+}
+
+.same-phone-iconi {
+    margin-top: 10px;
+}
+
+.content-for-ph {
+    text-align: center;
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: var(--white);
+    padding: 0px 18px 0 18px;
+    overflow: auto;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+
 .container {
-    max-width: 1200px;
-    margin: auto;
+    padding:0 14%;
 }
 
 .nav-server {
@@ -82,8 +122,10 @@ nav {
     display: flex;
 }
 
-.heart {
+.heart:hover {
     color: var(--violet);
+    font-size: 17px;
+    transition: 0.3s;
 }
 
 .change-nav {
@@ -93,7 +135,6 @@ nav {
 .phone-nav {
     display: none;
 }
-
 
 /* end of navbar */
 

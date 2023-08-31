@@ -31,6 +31,37 @@ body {
     overflow-x: hidden;
 }
 
+.box-shad {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.section-change {
+    cursor: pointer;
+}
+
+.hearting:hover {
+    transition: 0.4s;
+    background-color: var(--violet);
+    color: var(--white);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.submit-shad {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.box-shad-img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.box-shad-min-box {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.box-shad-min-img {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
 /* navbar */
 
 nav {
@@ -70,6 +101,46 @@ nav {
     transition: max-height 0.3s ease-out;
 }
 
+.phone-cont {
+    margin-top: 20px;
+    display: none;
+}
+
+.centretor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.episod-container-ph {
+    text-align: center;
+}
+
+.same-seasons {
+    margin-top: 5px;
+}
+
+.same-phone-icons {
+    margin-top: 18px;
+}
+
+.same-phone-iconi {
+    margin-top: 10px;
+}
+
+.content-for-ph {
+    text-align: center;
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: var(--white);
+    padding: 0px 18px 0 18px;
+    overflow: auto;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+
 .container {
     padding:0 14%;
 }
@@ -85,8 +156,10 @@ nav {
     display: flex;
 }
 
-.heart {
+.heart:hover {
     color: var(--violet);
+    font-size: 17px;
+    transition: 0.3s;
 }
 
 .change-nav {
@@ -286,28 +359,35 @@ footer {
 /* Media part */
 
 @media screen and (max-width: 920px) {
-
-    .second-server {
-        padding-left: 1%;
-    }
-
     .change-nav {
         margin-left: 30px;
     }
     .container {
         padding:0 11%;
     }
+    .support {
+        margin-left: 30px;
+    }
+    .fill_form {
+        margin-left: 15px;
+        width: 500px;
+    }
+    .input {
+        width: 500px
+    }
+    
+   
 }
 
-@media screen and (max-width: 819px) {
+@media screen and (max-width: 820px) {
 
     .second-server {
-        padding-left: 0%;
+        padding: 0 20px;
     }
-
     .phone-nav {
         display: block;
     }
+
 
     .nav-first {
         padding-top: 8px;
@@ -320,38 +400,19 @@ footer {
     .others {
         display: none;
     }
-
-    .second-server {
-        margin-left: 10%;
-    }
-
 }
 @media screen and (max-width: 505px) {
-
-    .second-server {
-        padding-left: 2%;
-    }
-
     .br {
         display: inline;
     }
 
-    .img-txt {
-        display: block;
+    .fiil_form {
+        width: 288px;
+        height: 600px
     }
-
-    .text-part {
-        margin-left: 0px;
-    }
-
-    .img-head {
-        margin-top: 16px;
-    }
-
-    .read-more {
-        margin-top: 18px;
-    }
-
+    .input, h4 {
+            width: 287px;
+        }
     .send-email {
         width: 85%;
     }
@@ -363,6 +424,10 @@ footer {
     .footer-cont {
         display: block;
     }
+ }
+
+
+@media screen and (max-width: 505px) {
 
     .second-footer-div {
         margin-top: 32px;

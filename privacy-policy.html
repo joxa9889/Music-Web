@@ -8,29 +8,44 @@
 </head>
 <body>
     <nav>
-        <div class="privacy__container">
+        <div class="container">
             <div class="nav-server">
                 <div class="nav-first">
-                    <a href="/javohir.html"><img src="/img/Logo (1).svg" alt=""></a>
+                    <a href="/home.html"><img src="/img/Logo (1).svg" alt=""></a>
                 </div>
 
-                <div class="nav-second phone-nav">
-                    <div><img src="/img/Menu-Icon.svg" alt=""></div>
-                </div>
-
+                <div class="collapsephone phone-nav"><img src="/img/Menu-Icon.svg" alt=""></div>
                 <div class="nav-second others">
                     <div>
-                        <button class="collapsible nav-a">Episodes <i class="up fa-solid fa-chevron-up"></i></button>
-                        <div class="content">
+                        <div>
+                            <button class="collapsible heart nav-a">Episodes <i class="up fa-solid fa-chevron-up"></i></button>
+                            <div class="content">
+                                <div class="same-season"><a class="same-link" href="/episode-1.html">Season 1</a></div>
+                                <div class="same-season anoth"><a class="same-link" href="/episode-2.html">Season 2</a></div>
+                                <div class="same-season anoth"><a class="same-link" href="/episode-3.html">Season 3</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="change-nav"><a class="nav-a heart" href="/blog.html">Blog </a></div>
+                    <div class="change-nav"><a class="nav-a heart" href="/contact.html">Contact </a></div>
+                    <div class="change-nav heart"><i class="heart fa-regular fa-heart"></i><a class="nav-a heart" href="/donate.html"> Donate </a></div>
+                    <div class="change-nav heart"><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+            </div>
+
+            <div class="centretor">
+                <div class="phone-cont" id="smth">
+                    <div class="episod-container-ph">
+                        <button class="collapsible-for nav-a">Episodes <i class="up fa-solid fa-chevron-up"></i></button>
+                        <div class="content-for-ph">
                             <div class="same-season"><a class="same-link" href="/episode-1.html">Season 1</a></div>
                             <div class="same-season anoth"><a class="same-link" href="/episode-2.html">Season 2</a></div>
                             <div class="same-season anoth"><a class="same-link" href="/episode-3.html">Season 3</a></div>
                         </div>
                     </div>
-                    <div class="change-nav"><a class="nav-a" href="/blog.html">Blog </a></div>
-                    <div class="change-nav"><a class="nav-a" href="">Contact </a></div>
-                    <div class="change-nav"><i class="heart fa-regular fa-heart"></i><a class="nav-a heart" href="/donate.html"> Donate </a></div>
-                    <div class="change-nav"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="same-phone-iconi"><a class="nav-a" href="/blog.html">Blog </a></div>
+                    <div class="same-phone-icons"><a class="nav-a" href="/contact.html">Contact </a></div>
+                    <div class="same-phone-icons"><i class="fa-regular fa-heart"></i><a class="nav-a" href="/donate.html"> Donate </a></div>
                 </div>
             </div>
         </div>
@@ -75,6 +90,7 @@
                         <div class="to-move"><a class="footer-links to-move" href="">Contact</a></div>
                         <div class="to-move"><a class="footer-links to-move" href="/donate.html">Donate</a></div>
                         <div class="to-move"><a class="footer-links to-move" href="/privacy-policy.html">Privacy Policy</a></div>
+                        <div class="to-move"><a class="footer-links to-move" href="/notfoundpage.html">Page Not Found</a></div>
                     </div>
                     <div class="second-footer-div">
                         <h3 class="head-foot">Newsletter</h3>
@@ -110,6 +126,34 @@
             var content = this.nextElementSibling;
             if (content.style.maxHeight){
             content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+
+        var btn = document.getElementsByClassName("collapsephone");
+            
+        btn[0].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = document.getElementById("smth");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+
+        var coll = document.getElementsByClassName("collapsible-for");
+        var i;
+    
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            content.style.padding = 0 + "px";
             } else {
             content.style.maxHeight = content.scrollHeight + "px";
             } 
