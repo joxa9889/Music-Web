@@ -172,6 +172,23 @@ nav {
     border-radius: 4px;
 }
 
+.second-part {
+    margin-top: 96px;
+}
+
+.br {
+    display: none;
+}
+
+.first-part {
+    display: flex;
+    justify-content: center;
+}
+
+.first-server {
+    text-align: center;
+}
+
 .about-music {
     display: flex;
     justify-content: center;
@@ -193,43 +210,54 @@ nav {
 }
 
 .music-add {
+    color: var(--lighter-black);
     margin-top: 39px;
     font-size: 26px;
 }
 
-.full-line {
-    height: 7px;
-    width: 100%;
-    background-color: var(--line-gray);
-    border-radius: 2px;
-}
-
-.where-line {
-    height: 7px;
-    width: 30%;
-    border-radius: 2px;
-    background-color: var(--lighter-black);
-}
-
-.now-time {
+.current-time {
     color: var(--dark-gray);
     letter-spacing: 1.90px;
     margin-right: 4px;
 }
 
-.end-time {
+.total-duration {
     color: var(--dark-gray);
     letter-spacing: 1.90px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.play {
+.playpause-track {
     margin-right: 15px;
 }
 
 .sound {
     margin-right: 15px;
+}
+
+.seek_slider {
+    width: 100%;
+    color: black;
+}
+
+.seek_slider{
+    -webkit-appearance: none;
+    outline: none;
+    width: 100%;
+    height: 7px;
+    border-radius: 2px;
+    background-color: #F5F5F7;
+    overflow: hidden;
+}
+
+.seek_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0px;
+    height: 0px;
+    background: black;
+    cursor: pointer;
+    box-shadow: -410px 0 0 400px #222222;
 }
 
 .add {
@@ -256,10 +284,6 @@ nav {
 .apple {
     margin-top: 15px;
     font-size: 25px;
-}
-
-.br {
-    display: none;
 }
 
 .about-sec {
