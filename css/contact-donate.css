@@ -121,6 +121,29 @@ nav {
     display: flex;
 }
 
+.up {
+    display: none;
+    margin-top: 2px;
+}
+
+.upn {
+    display: none;
+}
+
+.chr-same {
+    font-size: 11px;
+    margin-left: 3px;
+}
+
+
+.collapsible, .collapsible-for {
+    display: flex;
+}
+
+.X-icon {
+    display: none;
+}
+
 .heart:hover {
     color: var(--violet);
     font-size: 17px;

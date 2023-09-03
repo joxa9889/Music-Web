@@ -14,11 +14,11 @@
                     <a href="/home.html"><img src="/img/Logo (1).svg" alt=""></a>
                 </div>
 
-                <div class="collapsephone phone-nav"><img src="/img/Menu-Icon.svg" alt=""></div>
+                <div class="collapsephone phone-nav"><img class="Y-icon" src="/img/Menu-Icon.svg" alt=""> <img class="X-icon" src="/img/X.png" alt=""></div>
                 <div class="nav-second others">
                     <div>
                         <div>
-                            <button class="collapsible heart nav-a">Episodes <i class="up fa-solid fa-chevron-up"></i></button>
+                            <button class="collapsible heart nav-a">Episodes <div class="up"><i class="chr-same fa-solid fa-chevron-up"></i></div><div class="down"><i class="chr-same fa-solid fa-chevron-down"></i></div></button>
                             <div class="content">
                                 <div class="same-season"><a class="same-link" href="/episode-1.html">Season 1</a></div>
                                 <div class="same-season anoth"><a class="same-link" href="/episode-2.html">Season 2</a></div>
@@ -36,7 +36,7 @@
             <div class="centretor">
                 <div class="phone-cont" id="smth">
                     <div class="episod-container-ph">
-                        <button class="collapsible-for nav-a">Episodes <i class="up fa-solid fa-chevron-up"></i></button>
+                        <button class="collapsible-for nav-a">Episodes <div class="upn"><i class="chr-same fa-solid fa-chevron-up"></i></div><div class="downn"><i class="chr-same fa-solid fa-chevron-down"></i></div></button>
                         <div class="content-for-ph">
                             <div class="same-season"><a class="same-link" href="/episode-1.html">Season 1</a></div>
                             <div class="same-season anoth"><a class="same-link" href="/episode-2.html">Season 2</a></div>
@@ -74,9 +74,9 @@
                 <div class="add">
                     <div class="listen-on">Listen On</div>
                     <div class="music-apps">
-                        <div><i class="fa-brands fa-spotify icon"></i></div>
-                        <div><i class="fa-brands fa-soundcloud icon"></i></div>
-                        <div><i class="fa-brands fa-apple apple"></i></div>
+                        <div><i class="hovering fa-brands fa-spotify icon"></i></div>
+                        <div><i class="hovering fa-brands fa-soundcloud icon"></i></div>
+                        <div><i class="hovering fa-brands fa-apple apple"></i></div>
                     </div>
                 </div>
             </div>
@@ -256,152 +256,7 @@
             </div>
     </div>
 <!-- sdsds -->
-    <script>
-    var coll = document.getElementsByClassName("button");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-          content.style.padding = 0 + "px" + " " + 25 + "px";
-        } else {
-          content.style.padding = 25 + "px";
-          content.style.maxHeight = content.scrollHeight + "px";
-        } 
-      });
-    }
-    </script>
     <script src="https://kit.fontawesome.com/f268549e46.js" crossorigin="anonymous"></script>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-    
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-            content.style.maxHeight = null;
-            } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            } 
-        });
-        }
-
-        var btn = document.getElementsByClassName("collapsephone");
-            
-        btn[0].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var content = document.getElementById("smth");
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
-
-        var coll = document.getElementsByClassName("collapsible-for");
-        var i;
-    
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-            content.style.maxHeight = null;
-            content.style.padding = 0 + "px";
-            } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            } 
-        });
-        }
-
-        let now_playing = document.querySelector('.now-playing');
-        let playpause_btn = document.querySelector('.playpause-track');
-
-        let seek_slider = document.querySelector('.seek_slider');
-        let curr_time = document.querySelector('.current-time');
-        let total_duration = document.querySelector('.total-duration');
-        let curr_track = document.createElement('audio');
-
-        let track_index = 0;
-        let isPlaying = false;
-        let isRandom = false;
-        let updateTimer;
-
-        const music_list = [
-            {
-                music : 'audio/Eminem-Mockingbird.mp3'
-            },
-        ];
-
-        loadTrack(track_index);
-
-        function loadTrack(track_index){
-            clearInterval(updateTimer);
-            reset();
-
-            curr_track.src = music_list[track_index].music;
-            curr_track.load();
-
-            updateTimer = setInterval(setUpdate, 1000);
-
-            curr_track.addEventListener('ended', nextTrack);
-        }
-
-
-        function reset(){
-            curr_time.textContent = "00:00";
-            total_duration.textContent = "00:00";
-            seek_slider.value = 0;
-        }
-
-        function playpauseTrack(){
-            isPlaying ? pauseTrack() : playTrack();
-        }
-
-        function playTrack(){
-            curr_track.play();
-            isPlaying = true;
-            playpause_btn.innerHTML = '<i class="fa-solid fa-pause sizing"></i>';
-        }
-        function pauseTrack(){
-            curr_track.pause();
-            isPlaying = false;
-            playpause_btn.innerHTML = '<i class="fa-solid fa-play sizing"></i>';
-        }
-
-        function seekTo(){
-            let seekto = curr_track.duration * (seek_slider.value / 100);
-            curr_track.currentTime = seekto;
-        }
-        function setVolume(){
-            curr_track.volume = volume_slider.value / 100;
-        }
-        function setUpdate(){
-            let seekPosition = 0;
-            if(!isNaN(curr_track.duration)){
-                seekPosition = curr_track.currentTime * (100 / curr_track.duration);
-                seek_slider.value = seekPosition;
-
-                let currentMinutes = Math.floor(curr_track.currentTime / 60);
-                let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
-                let durationMinutes = Math.floor(curr_track.duration / 60);
-                let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
-
-                if(currentSeconds < 10) {currentSeconds = "0" + currentSeconds; }
-                if(durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
-                if(currentMinutes < 10) {currentMinutes = "0" + currentMinutes; }
-                if(durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
-
-                curr_time.textContent = currentMinutes + ":" + currentSeconds;
-                total_duration.textContent = durationMinutes + ":" + durationSeconds;
-            }
-        }
-    </script>
+    <script src="/js/first.js"></script>
 </body>
 </html>

@@ -144,6 +144,29 @@ nav {
     display: none;
 }
 
+.up {
+    display: none;
+    margin-top: 2px;
+}
+
+.upn {
+    display: none;
+}
+
+.chr-same {
+    font-size: 11px;
+    margin-left: 3px;
+}
+
+
+.collapsible, .collapsible-for {
+    display: flex;
+}
+
+.X-icon {
+    display: none;
+}
+
 .centretor {
     display: flex;
     justify-content: center;

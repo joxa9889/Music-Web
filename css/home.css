@@ -129,6 +129,11 @@ nav {
     display: flex;
 }
 
+.same-fa {
+    display: flex;
+    align-items: center;
+}
+
 .heart:hover {
     color: var(--violet);
     font-size: 17px;
@@ -651,6 +656,29 @@ footer {
 
 .fa-twitter:hover {
     color: #1DA1F2;
+}
+
+.up {
+    display: none;
+    margin-top: 2px;
+}
+
+.upn {
+    display: none;
+}
+
+.chr-same {
+    font-size: 11px;
+    margin-left: 3px;
+}
+
+
+.collapsible, .collapsible-for {
+    display: flex;
+}
+
+.X-icon {
+    display: none;
 }
 
 /* end of details */

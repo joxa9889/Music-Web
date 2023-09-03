@@ -14,11 +14,11 @@
                     <a href="/home.html"><img src="/img/Logo (1).svg" alt=""></a>
                 </div>
 
-                <div class="collapsephone phone-nav"><img src="/img/Menu-Icon.svg" alt=""></div>
+                <div class="collapsephone phone-nav"><img class="Y-icon" src="/img/Menu-Icon.svg" alt=""> <img class="X-icon" src="/img/X.png" alt=""></div>
                 <div class="nav-second others">
                     <div>
                         <div>
-                            <button class="collapsible heart nav-a">Episodes <i class="up fa-solid fa-chevron-up"></i></button>
+                            <button class="collapsible heart nav-a">Episodes <div class="up"><i class="chr-same fa-solid fa-chevron-up"></i></div><div class="down"><i class="chr-same fa-solid fa-chevron-down"></i></div></button>
                             <div class="content">
                                 <div class="same-season"><a class="same-link" href="/episode-1.html">Season 1</a></div>
                                 <div class="same-season anoth"><a class="same-link" href="/episode-2.html">Season 2</a></div>
@@ -36,7 +36,7 @@
             <div class="centretor">
                 <div class="phone-cont" id="smth">
                     <div class="episod-container-ph">
-                        <button class="collapsible-for nav-a">Episodes <i class="up fa-solid fa-chevron-up"></i></button>
+                        <button class="collapsible-for nav-a">Episodes <div class="upn"><i class="chr-same fa-solid fa-chevron-up"></i></div><div class="downn"><i class="chr-same fa-solid fa-chevron-down"></i></div></button>
                         <div class="content-for-ph">
                             <div class="same-season"><a class="same-link" href="/episode-1.html">Season 1</a></div>
                             <div class="same-season anoth"><a class="same-link" href="/episode-2.html">Season 2</a></div>
@@ -133,49 +133,7 @@
 
     <script src="https://kit.fontawesome.com/f268549e46.js" crossorigin="anonymous"></script>
 
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-    
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-            content.style.maxHeight = null;
-            } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            } 
-        });
-        }
-
-        var btn = document.getElementsByClassName("collapsephone");
-            
-        btn[0].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var content = document.getElementById("smth");
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
-
-        var coll = document.getElementsByClassName("collapsible-for");
-        var i;
-    
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-            content.style.maxHeight = null;
-            content.style.padding = 0 + "px";
-            } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            } 
-        });
-        }
+    <script src="/js/third.js">
     </script>
 </body>
 </html>

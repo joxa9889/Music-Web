@@ -102,6 +102,29 @@ nav {
     transition: max-height 0.3s ease-out;
 }
 
+.up {
+    display: none;
+    margin-top: 2px;
+}
+
+.upn {
+    display: none;
+}
+
+.chr-same {
+    font-size: 11px;
+    margin-left: 3px;
+}
+
+
+.collapsible, .collapsible-for {
+    display: flex;
+}
+
+.X-icon {
+    display: none;
+}
+
 .container {
     padding:0 14%;
 }
