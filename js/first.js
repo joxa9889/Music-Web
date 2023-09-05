@@ -75,7 +75,7 @@ let updateTimer;
 
 const music_list = [
     {
-        music : 'audio/Eminem-Mockingbird.mp3'
+        music : 'audio/Alan-Walker-Faded.mp3'
     },
 ];
 

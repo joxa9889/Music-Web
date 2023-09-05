@@ -208,6 +208,10 @@ nav {
 
 /* podcasts */
 
+.play-btn {
+    cursor: pointer;
+}
+
 .top-date {
     display: flex;
     align-items: center;
